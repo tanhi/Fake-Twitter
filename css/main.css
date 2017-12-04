@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*estilo al header*/
+header {
+  background: #6ad2f3;
+  height: 60px;
+  margin-top: 0;
+  }
+
+h1 {
+  color: #fff;
+  font-family:monospace;
+  margin-top: 0;
+  text-align: center;
+  }
+
+.bird{
+  float:left;
+  height: 100px;
+  width: 100px;
+
+}
+
+/*estilo al main*/
+main {
+  background-image: url(../assets/images/bicicleta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  margin: 0;
+}
+
+.box-welcome {
+  background: white;
+  display: inline-block;
+  font-family:monospace;
+  height: 30%;
+  margin: 1% 6%;
+  padding-left: 20px;
+  width: 40%;
+}
+
+.box-welcome:nth-child(1){
+  font-size: 15px;
+  padding-top: 20px;
+}
+
+.box-welcome :nth-child(4){
+  color:#0080ff;
+  padding-top: 30px;
+}
+
+#message {
+  background: white;
+  display: inline-block;
+  height: 30%;
+  margin-top: 1%;
+  vertical-align: top;
+  width: 40%;
+}
+
+/*estilo al textArea*/
+#words {
+  height: 70%;
+  border: none;
+  /*box-sizing: border-box;*/
+  font-family:monospace;
+  margin-bottom: 0;
+  outline: none;
+  /*padding: 10px;*/
+  resize: none;
+  width: 80%;
+  align-content: center;
+  text-align: justify;
+}
+
+/*estilo al hr dentro del form*/
+hr {
+  margin-top: 0;
+}
+
+/*estilo al boton twitter*/
+#button-twittear {
+  background: #6ad2f3;
+  color: white;
+  font-family: cursive;
+  height: 35px;
+  margin-left: 10px;
+  width: 90px;
+}
+
+/*estilo al mensaje añadido debajo*/
+.twitt {
+  background: white;
+  border-radius: 5px;
+  display: block;
+  font-family:monospace;
+  /*height: 8%;*/
+  margin: 2% 6%;
+  padding: 3px;
+  width: 90%;
+  text-align: justify;
+  resize: vertical;
+  box-sizing: content-box;
+}
+
+/*estilo al contador de caracteres*/
+#character {
+  color:black;
+  display: inline-block;
+  float: right;
+  height: 25px;
+  margin-right: 20px;
+  width: 30px;
