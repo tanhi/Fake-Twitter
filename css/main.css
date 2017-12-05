@@ -3,28 +3,28 @@ body {
   padding: 0;
 }
 
-/*estilo al header*/
+/*Estilo de barra del encabezdo*/
 header {
   background: #6ad2f3;
-  height: 60px;
+  height: 70px;
   margin-top: 0;
   }
-
+/*Titulo*/
 h1 {
   color: #fff;
   font-family:monospace;
   margin-top: 0;
-  text-align: center;
+  text-align: center;/*Texto centrado*/
   }
-
+/*Icono*/
 .bird{
   float:left;
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
 
 }
 
-/*estilo al main*/
+/*estilo al fondo*/
 main {
   background-image: url(../assets/images/bicicleta.jpg);
   background-repeat: no-repeat;
@@ -32,73 +32,79 @@ main {
   height: 650px;
   margin: 0;
 }
-
+/*Primera caja de texto*/
 .box-welcome {
-  background: white;
-  display: inline-block;
   font-family:monospace;
+  background: white;
+  border-radius: 10px;
+  font-family:monospace;
+  display: inline-block;
   height: 30%;
-  margin: 1% 6%;
+  margin: 3% 6%;
   padding-left: 20px;
   width: 40%;
 }
-
-.box-welcome:nth-child(1){
+/* Texto de la caja de mensaje*/
+.box-welcome{
   font-size: 15px;
   padding-top: 20px;
 }
-
+/*Dando color y margen a la palabra CÓDIGO*/
 .box-welcome :nth-child(4){
   color:#0080ff;
   padding-top: 30px;
 }
-
+/*Estilo del formulario dónde se ingresa el mensaje a twittear*/
 #message {
   background: white;
+  border-radius: 10px;
   display: inline-block;
-  height: 30%;
-  margin-top: 1%;
+  height: 40%;
+  margin-top: 3%;
   vertical-align: top;
   width: 40%;
 }
 
-/*estilo al textArea*/
+/*Styl del boton para twittear*/
+#button-twittear {
+  background: #6ad2f3;
+  border-radius: 10px;
+  color: white;
+  font-family: cursive;
+  height: 30px;
+  margin-left: 10px;
+  margin bottom: 2%;
+  width: 90px;
+}
+/*Estilo del textArea*/
 #words {
   height: 70%;
   border: none;
-  /*box-sizing: border-box;*/
   font-family:monospace;
   margin-bottom: 0;
+  margin: 2%;
   outline: none;
-  /*padding: 10px;*/
-  resize: none;
-  width: 80%;
+  resize: vertical;
+  width: 95%;
   align-content: center;
   text-align: justify;
 }
+.container {
+  width:80%;
+}
 
-/*estilo al hr dentro del form*/
+/*Linea horizontal*/
 hr {
   margin-top: 0;
 }
 
-/*estilo al boton twitter*/
-#button-twittear {
-  background: #6ad2f3;
-  color: white;
-  font-family: cursive;
-  height: 35px;
-  margin-left: 10px;
-  width: 90px;
-}
 
-/*estilo al mensaje añadido debajo*/
+/*Style al twitt publicado*/
 .twitt {
   background: white;
   border-radius: 5px;
   display: block;
   font-family:monospace;
-  /*height: 8%;*/
   margin: 2% 6%;
   padding: 3px;
   width: 90%;
@@ -106,12 +112,18 @@ hr {
   resize: vertical;
   box-sizing: content-box;
 }
-
-/*estilo al contador de caracteres*/
+/*Contador de caracteres*/
 #character {
+  border-radius: 10px;
   color:black;
   display: inline-block;
   float: right;
   height: 25px;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  text-align:center;
   width: 30px;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
